@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html>
   <!-- ... -->
-  <body>
+  <body style="background-color:LightSkyBlue;">
     <nav>
       <%= link_to "Home", root_path %>
       <%= link_to "Services", root_path %>
-      <%= link_to "Products", root_path %>
-      <%= link_to "Blog", root_path %>
       <%= button_to "Log out", session_path, method: :delete if authenticated? %>
     </nav>
 
